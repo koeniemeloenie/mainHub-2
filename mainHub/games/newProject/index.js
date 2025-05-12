@@ -5,15 +5,10 @@ const getTile = (xInc, yInc) => {
   const xAbs = Math.trunc(xInc);
   const yAbs = Math.trunc(yInc);
 
-  if (
-    xInc + 1 >= lvl1[0].length ||
-    xInc <= 0 ||
-    yInc <= 0 ||
-    yInc > lvl1.length
-  )
+  if (xInc >= lvl1[0].length || xInc <= 0 || yInc <= 0 || yInc > lvl1.length)
     return " ";
   const tile = lvl1[yAbs][xAbs];
-  return { tile };
+  return tile;
   console.log(tile);
 };
 

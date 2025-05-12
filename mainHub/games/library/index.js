@@ -1,3 +1,15 @@
+const txt = {
+  default: (msg = "hello world", x = innerWidth / 2, y = innerHeight / 2) => {
+    context.textAlign = "center";
+    context.textBaseline = "middle";
+    context.fillStyle = "black";
+    context.font = "bold 20px timesnewroman";
+    context.beginPath();
+    context.fillText(msg, x, y);
+    console.log(msg);
+  },
+};
+
 const getCanvas = () => {
   const canvas = document.createElement("canvas");
 

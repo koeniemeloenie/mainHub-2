@@ -6,7 +6,7 @@ const txt = {
     context.font = "bold 20px timesnewroman";
     context.beginPath();
     context.fillText(msg, x, y);
-    console.log(msg);
+    // console.log(msg);
   },
 };
 

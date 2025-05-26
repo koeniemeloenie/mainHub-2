@@ -9,7 +9,7 @@ const getTile = (xInc, yInc) => {
     return " ";
   const tile = lvl1[yAbs][xAbs];
   return tile;
-  console.log(tile);
+  // console.log(tile);
 };
 
 let screenBlockLength = innerHeight / lvl1.length;
